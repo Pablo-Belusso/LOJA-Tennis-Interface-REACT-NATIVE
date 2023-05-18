@@ -1,18 +1,32 @@
+//import 'react-native-gesture-handler';
 import React from 'react';
-
 import {StatusBar, StyleSheet, View} from 'react-native';
+
+// import { AppLoading } from 'expo';
+// import { useFonts, Anton_400Regular } from '@expo-google-fonts/anton';
 
 import Rotas from './src/router'; // Importa a função Rotas do arquivo "router.js"
 
 export default function App() {
+  /*
+  let [fontsLoaded] = useFonts({
+    Anton_400Regular,
+  });
+
+  if (!fontsLoaded){
+    return <AppLoading />
+  }
+  */
+
   return (
     <View style={estilos.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#000" />
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="#000"
+        translucent={true}
+      />
       <Rotas />
     </View>
-
-    //  <Text style={{ marginTop: 100, fontSize: 35 }}> Meu mozão Bebezão! </Text>
-    //
   );
 }
 
