@@ -1,12 +1,36 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React from 'react';
+
+import {StatusBar, StyleSheet, View} from 'react-native';
+
+import Rotas from './src/router'; // Importa a função Rotas do arquivo "router.js"
+
+export default function App() {
+  return (
+    <View style={estilos.container}>
+      <StatusBar barStyle="light-content" backgroundColor="#000" />
+      <Rotas />
+    </View>
+
+    //  <Text style={{ marginTop: 100, fontSize: 35 }}> Meu mozão Bebezão! </Text>
+    //
+  );
+}
+
+const estilos = StyleSheet.create({
+  container: {
+    display: 'flex',
+    flex: 1,
+  },
+});
+
+/*
+
+
+
+
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import type { PropsWithChildren } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -29,7 +53,7 @@ type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
-function Section({children, title}: SectionProps): JSX.Element {
+function Section({ children, title }: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -76,9 +100,9 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+          <Section title="Passo Um">
+            Edite <Text style={styles.highlight}>App.tsx</Text> para alterar esta tela e
+            depois voltar para ver suas edições.
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
@@ -103,12 +127,12 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontWeight: '600',
+    fontFamily: 'Anton-Regular',
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
-    fontWeight: '400',
+    fontFamily: 'Anton-Regular',
   },
   highlight: {
     fontWeight: '700',
@@ -116,3 +140,5 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+ */
