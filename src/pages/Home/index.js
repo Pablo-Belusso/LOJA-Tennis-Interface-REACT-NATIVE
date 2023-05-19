@@ -2,6 +2,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Shoes from '../../component/shoes';
 
 export default function Home() {
     return (
@@ -12,10 +13,10 @@ export default function Home() {
                 style={estilo.image}
                 />
 
-                <View>
-                    <Text style={estilo.texto}>TÊNIS</Text>
-                    <Text style={estilo.texto}>°</Text>
-                    <Text style={estilo.texto}>MASCULINO</Text>
+                <View style={estilo.textoCaixa}> 
+                    <Text style={[estilo.texto, { color:'black'}]}>TÊNIS</Text> 
+                    <Text style={[estilo.texto, { color: '#CECECF'}]}>°</Text>
+                    <Text style={[estilo.texto, { color: '#CECECF'}]}>MASCULINO</Text>
 
                     <TouchableOpacity style={{position: 'absolute', right: 0, alignSelf: 'center'}}>
                         <Icon
@@ -27,12 +28,25 @@ export default function Home() {
 
                 </View>
             </View>
+
+            <View style={estilo.linha}/>
+
+            <ScrollView>
+                <Text style={estilo.texto}>LANÇAMENTOS</Text>
+
+                <View style={{ flexDirection:'row', justifyContent:'space-around'}}>
+                    <Shoes/>
+                    <Shoes/>
+                </View>
+
+                
+
+            </ScrollView>
             
         </View>
     );
 }
 
-// <Text style={{ marginTop: 200, fontSize: 40, fontFamily: 'Anton-Regular', color: 'red' }}> Teste</Text>
 
 const estilo = StyleSheet.create({
     caixa: {
@@ -45,6 +59,21 @@ const estilo = StyleSheet.create({
     },
     image:{
         width:'100%'
+    }, 
+    textoCaixa:{
+        flexDirection: 'row',
+        marginVertical: '5%',
+        marginHorizontal: '5%'
+    },
+    texto:{
+        fontFamily: 'Anton-Regular',
+        fontSize: 26,
+        marginHorizontal:'1%',
+        
+    },
+    linha:{
+        borderBottomColor:'#d8d8d8',
+        borderBottomWidth: 2
     }
 
   });
