@@ -2,22 +2,9 @@
 import React from 'react';
 import {StatusBar, StyleSheet, View} from 'react-native';
 
-// import { AppLoading } from 'expo';
-// import { useFonts, Anton_400Regular } from '@expo-google-fonts/anton';
-
 import Rotas from './src/router'; // Importa a função Rotas do arquivo "router.js"
 
 export default function App() {
-  /*
-  let [fontsLoaded] = useFonts({
-    Anton_400Regular,
-  });
-
-  if (!fontsLoaded){
-    return <AppLoading />
-  }
-  */
-
   return (
     <View style={estilos.container}>
       <StatusBar
