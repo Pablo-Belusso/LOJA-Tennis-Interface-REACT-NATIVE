@@ -39,28 +39,31 @@ export default function Home() {
                 <Text style={estilo.texto}>LANÇAMENTOS</Text>
 
                 <View style={{ flexDirection:'row', justifyContent:'space-around'}}>
-                    <Shoes img={require('../../assets/1.png')} cost="R$ 199,00" onClick={()=> navegação.navigate('Detail')}>
-                        Nike Air Max Dia
-                    </Shoes>
+                    
                     <Shoes img={require('../../assets/2.png')} cost="R$ 250,00" onClick={()=> navegação.navigate('Detail')}>
                         Nike DownShifter 10
-                    </Shoes>                    
+                    </Shoes>  
+
+                    <Shoes img={require('../../assets/1.png')} cost="R$ 199,00" onClick={()=> alert('Não temos tela para esse produto')}>
+                        Nike Air Max Dia
+                    </Shoes>
+
                 </View>
 
                 <View style={{ flexDirection:'row', justifyContent:'space-around'}}>
-                    <Shoes img={require('../../assets/3.png')} cost="R$ 159,00" onClick={()=> alert('Clicou no Tennis Rapá')}>
+                    <Shoes img={require('../../assets/3.png')} cost="R$ 159,00" onClick={()=> alert('Não temos tela para esse produto')}>
                         Adidas Classic Red
                     </Shoes>
-                    <Shoes img={require('../../assets/4.png')} cost="R$ 300,00" onClick={()=> alert('Clicou no Tennis Rapá')}>
+                    <Shoes img={require('../../assets/4.png')} cost="R$ 300,00" onClick={()=> alert('Não temos tela para esse produto')}>
                         Adidas Exército
                     </Shoes>
                 </View>
 
                 <View style={{ flexDirection:'row', justifyContent:'space-around'}}>
-                    <Shoes img={require('../../assets/5.png')} cost="R$ 185,00" onClick={()=> alert('Clicou no Tennis Rapá')}>
+                    <Shoes img={require('../../assets/5.png')} cost="R$ 185,00" onClick={()=> alert('Não temos tela para esse produto')}>
                         Adidas Sports
                     </Shoes>
-                    <Shoes img={require('../../assets/6.png')} cost="R$ 230,00" onClick={()=> alert('Clicou no Tennis Rapá')}>
+                    <Shoes img={require('../../assets/6.png')} cost="R$ 230,00" onClick={()=> alert('Não temos tela para esse produto')}>
                         Adidas Sport Casual
                     </Shoes>
                 </View>
