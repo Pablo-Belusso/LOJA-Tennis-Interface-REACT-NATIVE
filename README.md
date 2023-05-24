@@ -15,16 +15,25 @@
 </div>
  
 ### Tela de Detalhe do Primeiro Tennis parte 01:
-
+<div align="center">
+ 
 ![Tela DETAIL TENIS-01](https://github.com/Pablo-Belusso/LOJA-Tennis-Interface/assets/121649838/d8266300-62a9-433a-ae20-070022fec05f)
 
+</div>
+ 
 ### Tela de Detalhe do Primeiro Tennis parte 02:
-
+<div align="center">
+ 
 ![Tela DETAIL TENIS-02 fw](https://github.com/Pablo-Belusso/LOJA-Tennis-Interface/assets/121649838/fe3201c8-b049-4fcd-9684-79daf9f1736b)
 
-### Tela Home (Tennis sem Tela):
+</div>
 
+### Tela Home (Tennis sem Tela):
+<div align="center">
+ 
 ![Tela HOME_Sem Detail fw](https://github.com/Pablo-Belusso/LOJA-Tennis-Interface/assets/121649838/2ad08ac7-5ec9-4f5c-b62e-2a07f7565d18)
+
+</div>
 
 ## SOBRE:
 
